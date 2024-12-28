@@ -17,4 +17,4 @@ Under Permissions, you'll need to turn on the timers option.
 
 You can go to the test section, put it in Developer mode and try it out!
 
-Again, I will at some point in the future update and flesh this README out a little more, I have a couple of things I want to add to the code.
+Again, I will at some point in the future update and flesh this README out a little more, I have a couple of things I want to add to the skill and then some error logging cleanup to save on API requests in Alexa.
