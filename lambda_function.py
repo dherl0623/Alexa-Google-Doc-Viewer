@@ -491,25 +491,6 @@ def create_or_set_timer(api_endpoint, api_access_token, duration, label):
         logger.error(f"Unexpected error while calling Alexa Timer API: {str(e)}")
         return {"error": str(e)}
 
-def handle_cancel_timer():
-    """Handle canceling a timer."""
-    # Use the Timer Management API directive to cancel timers
-    return {
-        'version': '1.0',
-        'response': {
-            'directives': [
-                {
-                    'type': 'Timers.CancelAllTimers'
-                }
-            ],
-            'outputSpeech': {
-                'type': 'PlainText',
-                'text': "All timers have been canceled."
-            },
-            'shouldEndSession': False
-        }
-    }
-
 def handle_user_event(event, session_attributes):
     """Handle user selection of a category or recipe."""
     arguments = event['request'].get('arguments', [])
